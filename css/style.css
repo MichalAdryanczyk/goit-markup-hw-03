@@ -28,6 +28,58 @@ body {
 }
 .list {
   list-style: none;
+  display: flex;
+}
+.list-nav {
+  padding: 32px 0px 32px 0px;
+  margin: 0px 0px 0px 93px;
+}
+.list-item-nav:not(:first-child) {
+  padding-left: 43px;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list-profile {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding: 0px;
+}
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list-team {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding: 0px;
+}
+.filter-button {
+  display: flex;
+}
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  width: 1600px;
+  margin: auto;
+  background-color: var(--dark-back);
+}
+.list-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
 }
 .logo {
   font-family: "Raleway";
@@ -36,12 +88,14 @@ body {
   line-height: 1.38;
   letter-spacing: 0.03em;
   text-decoration: none;
+  padding: 24px 0px 25px 0px;
 }
 .logo-part1 {
   color: var(--my-blue);
 }
 .logo-part2 {
   color: var(--just-black);
+  margin-right: 0px;
 }
 footer .logo-part2 {
   color: var(--just-white);
@@ -61,6 +115,13 @@ footer .logo-part2 {
 .current-link {
   color: var(--my-blue);
 }
+.header-contacts {
+  margin-left: 371px;
+  padding: 32px 0px 32px 0px;
+}
+.h-cont-item:nth-child(2) {
+  margin-left: 50px;
+}
 .header-contacts a {
   font-size: 14px;
   font-weight: 500;
@@ -75,16 +136,23 @@ footer .logo-part2 {
 .footer-contact:focus {
   color: var(--my-blue);
 }
-.main-header-section,
-footer {
+.main-header-section {
   background-color: var(--dark-back);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1600px;
+  height: 600px;
 }
+
 .main-header {
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
   color: var(--just-white);
+  text-align: center;
 }
 .button-order {
   width: 200px;
@@ -99,13 +167,12 @@ footer {
   color: var(--just-white);
   cursor: pointer;
   font-family: inherit;
+  line-height: 1.88;
 }
 .section-header {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  /*letter-spacing: inherit;- dlaczego używając "inherit" nie otrzymujemy 
-  tego samego rezultatu skoro body ma letter-spacing = 0.03em*/
 }
 .advantage {
   font-size: 14px;
@@ -153,6 +220,7 @@ footer {
   cursor: pointer;
   font-family: inherit;
   letter-spacing: 0.03em;
+  line-height: 1.63;
 }
 .filter-button button:hover,
 .filter-button button:focus {
@@ -168,6 +236,36 @@ footer {
 }
 .prod-type {
   font-size: 16px;
+  letter-spacing: 0.03em;
   line-height: 1.88;
   color: var(--light-text-color);
+}
+/*.container used only for setting the width and 
+automatic margins of content*/
+
+.container {
+  display: flex;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightgray;
+  border-color: violet;
+  border-style: dashed;
+  border-width: 3px;
+}
+/*.section - to make the stack layout of sections*/
+.section {
+  width: 1600px;
+  margin: auto;
+  background-color: lightcyan;
+}
+header {
+  width: 1600px;
+  margin: auto;
+  background-color: lightcyan;
+}
+footer {
+  width: 1600px;
+  margin: auto;
+  background-color: lightcyan;
 }

@@ -26,17 +26,44 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.container {
+  display: flex;
+  width: 1170px;
+  flex-grow: 0;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  margin: 0 auto;
+  padding-bottom: 94px;
+}
+.main-head-background {
+  display: flex;
+  background-color: var(--dark-back);
+}
+header {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-border {
+  border-bottom: solid 1px #ececec;
+}
+footer {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--dark-back);
+}
 .list {
   list-style: none;
   display: flex;
   padding: 0px;
   margin: 0px;
 }
-
 .list-nav {
   padding: 32px 0px 32px 0px;
   margin: 0px 0px 0px 93px;
-  height: 80px;
 }
 .list-item-nav:not(:first-child) {
   padding-left: 43px;
@@ -79,7 +106,6 @@ body {
   margin-bottom: 30px;
   text-align: center;
 }
-
 .filter-button {
   display: flex;
   justify-content: center;
@@ -114,11 +140,10 @@ body {
   border-right: solid 1px #eeeeee;
   border-bottom: solid 1px #eeeeee;
 }
-
 .footer-box {
   display: flex;
   flex-direction: column;
-  width: 1600px;
+  width: 1170px;
   margin: auto;
   background-color: var(--dark-back);
   padding-top: 60px;
@@ -136,7 +161,6 @@ body {
   line-height: 1.38;
   letter-spacing: 0.03em;
   text-decoration: none;
-  /* height: 80px; */
   padding: 24px 0px 25px 0px;
 }
 .logo-part1 {
@@ -171,7 +195,6 @@ footer .logo-part2 {
 .header-contacts {
   margin-left: 371px;
   padding: 32px 0px 32px 0px;
-  height: 80px;
 }
 .h-cont-item:nth-child(2) {
   margin-left: 50px;
@@ -190,15 +213,18 @@ footer .logo-part2 {
 .footer-contact:focus {
   color: var(--my-blue);
 }
+
 .main-header-box {
-  background-color: var(--dark-back);
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1600px;
-  height: 600px;
+  justify-content: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  width: 1170px;
+}
+.main-head-background {
+  background-color: var(--dark-back);
 }
 .main-header {
   font-size: 44px;
@@ -238,7 +264,11 @@ footer .logo-part2 {
 
 .list-advantage {
   display: flex;
+  width: 1170px;
   gap: 30px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .advantage {
   font-size: 14px;
@@ -253,7 +283,7 @@ footer .logo-part2 {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.team-section {
+.team-section-background {
   background-color: var(--light-back);
 }
 .employee-name {
@@ -321,36 +351,4 @@ footer .logo-part2 {
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 0px 24px 0px 24px;
-}
-/*.container used only for setting the width and 
-automatic margins of content*/
-
-.container {
-  display: flex;
-  width: 1170px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  /* background-color: lightgray; */
-  border-color: violet;
-}
-/*.section - to make the stack layout of sections*/
-.section {
-  width: 1600px;
-  margin: auto;
-  padding-bottom: 94px;
-}
-
-header {
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  /* background-color: darkcyan; */
-}
-footer {
-  width: 1600px;
-  /* height: 252px; */
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--dark-back);
 }
